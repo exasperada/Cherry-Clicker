@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo</title>
+    <title>Cherry Clicker</title>
+    <link rel="stylesheet" href="jogo.css">
 </head>
 <body>
-    <h1>Cerejas:</h1>
-    <div id="cerejas">0</div>
-    
+    <div class="top-bar">
+        <div id="cerejas">Cerejas: 0/500</div>
+        <div id="cerejasPorClique">Cerejas por clique: 1</div>
+        <div id="upgrades">Upgrades: 0</div>
+    </div>
+
+    <div class="click-area">
+        <img src="img/cereja.png" id="cherryImage" alt="Cereja">
+    </div>
+
+    <div class="upgrades">
+        <div class="upgrade" onclick="comprarUpgrade(25, 1)">Cereja Plus - $25<br>+1 cereja por clique</div>
+        <div class="upgrade" onclick="comprarUpgrade(60, 5)">Cereja Super - $60<br>+5 cerejas por clique</div>
+        <div class="upgrade" onclick="comprarUpgrade(120, 20)">Cereja Mega - $120<br>+20 cerejas por clique</div>
+        <div class="upgrade" onclick="comprarUpgrade(300, 50)">Cereja Blaster - $300<br>+50 cerejas por clique</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
