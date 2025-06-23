@@ -1,0 +1,63 @@
+
+@font-face {
+  font-family: 'Railey';
+  src: url('fonts/Railey-PersonalUse.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --vermelho: #af0000;
+  --verde: #4c876a;
+  --rosa: #e3c0bc;
+}
+
+body {
+  background-clip: url(https://youtu.be/J8K3bb4eHvw?si=0BOu73DHxWImw-AN);
+  background-size: cover;
+}
+
+
+
+main {
+  display: flex;
+  gap: 50px;
+align-items: center;
+  justify-content: center;
+  height: 700px;
+}
+
+h1 {
+  font-family: 'Railey', cursive;
+  font-size: 48px;
+  color: var(--vermelho);
+}
+
+.cereja {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.cereja img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.cereja img.hover {
+  opacity: 0; /* Esconde a imagem hover inicialmente */
+}
+
+.cereja:hover img.hover {
+  opacity: 1; /* Faz a imagem hover aparecer com fade */
+}
+
+.cereja:hover img.normal {
+  opacity: 0; /* Esconde a imagem normal quando passa o mouse */
+}
+
