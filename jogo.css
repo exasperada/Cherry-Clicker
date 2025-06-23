@@ -1,7 +1,14 @@
+:root {
+  --vermelho: #af0000;
+  --verde: #4c876a;
+  --rosa: #e3c0bc;
+  --rosahover: #e69a9a
+}
+
 body {
     font-family: cursive;
-    background-color: #f2d1d1;
-    color: #a10000;
+    background-color: var(--rosa);  
+    color: var(--vermelho);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -12,7 +19,7 @@ body {
 .top-bar {
     display: flex;
     justify-content: space-around;
-    background-color: #a10000;
+    background-color: var(--vermelho);
     color: white;
     padding: 10px;
     font-size: 18px;
@@ -26,6 +33,7 @@ body {
     width: 150px;
     cursor: pointer;
     transition: transform 0.1s;
+    background-image: url(img/fundo_cherry.avif));
 }
 
 #cherryImage:active {
@@ -37,8 +45,8 @@ body {
 }
 
 .upgrade {
-    background-color: #f2c1c1;
-    border: 2px solid #a10000;
+    background-color: var(--rosa);
+    border: 2px solid var(--vermelho);
     border-radius: 10px;
     margin: 10px auto;
     width: 300px;
@@ -48,5 +56,5 @@ body {
 }
 
 .upgrade:hover {
-    background-color: #e69a9a;
+    background-color: var(--rosahover);
 }
