@@ -1,28 +1,13 @@
-
-@font-face {
-  font-family: 'Railey';
-  src: url('fonts/Railey-PersonalUse.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root {
   --vermelho: #af0000;
   --verde: #4c876a;
   --rosa: #e3c0bc;
 }
 
-body {
-  background-clip: url(https://youtu.be/J8K3bb4eHvw?si=0BOu73DHxWImw-AN);
-  background-size: cover;
-}
-
-
-
 main {
   display: flex;
   gap: 50px;
-align-items: center;
+  align-items: center;
   justify-content: center;
   height: 700px;
 }
