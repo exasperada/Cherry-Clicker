@@ -24,4 +24,5 @@ function comprarUpgrade(custo, aumento) {
     }
 }
 
+
 atualizarTela();
