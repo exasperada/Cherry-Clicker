@@ -25,17 +25,17 @@ body {
 
 .click-area {
     margin: 20px 0;
-    background-image: url(img/fundoclick.png);
     padding: 5%;
-    border-radius: 50%;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 #cherryImage {
     width: 300px;
     cursor: pointer;
     transition: transform 0.1s;
-    background-image: url(img/fundo_cherry.avif));
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 #cherryImage:active {

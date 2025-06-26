@@ -11,23 +11,27 @@
 
     <div class="top-bar">
 
-        <div id="cerejas">Cerejas: 0/500</div>
-        <div id="cerejasPorClique">Cerejas por clique: 1</div>
-        <div id="upgrades">Upgrades: 0</div>
+        <div><p id="contador">Cerejas 0</p></div>
+
+        <div><p id="cerejasPorClique">Cerejas por clique: 1</p></div>
+
+        <div><p id="upgrades">Upgrades: 0</p></div>
 
     </div>
 
     <div class="click-divisao">
 
         <div class="click-area">
-            <img src="img/cereja.png" id="cherryImage" alt="Cereja">
+            <div>
+                <button id="cherryImage" onclick="diminuirTamanho()"> <img src="img/cereja.png" alt="cereja"></button>
+            </div>
         </div>
 
         <div class="upgrades">
-            <div class="upgrade" onclick="comprarUpgrade(25, 1)"> <div class="compra"> Cereja Plus - $25</div> <div> +1 cereja por clique </div></div>
-            <div class="upgrade" onclick="comprarUpgrade(60, 5)"> <div class="compra"> Cereja Super - $60 </div> <div> +5 cerejas por clique </div></div>
-            <div class="upgrade" onclick="comprarUpgrade(120, 20)"> <div class="compra"> Cereja Mega - $120</div> <div> +20 cerejas por clique </div></div>
-            <div class="upgrade" onclick="comprarUpgrade(300, 50)"> <div class="compra"> Cereja Blaster - $300</div> <div> +50 cerejas por clique </div></div>
+            <div class="upgrade" onclick="upgrade1(1)"> <div class="compra"> Cereja Plus - $25</div> <div> +1 cereja por clique </div></div>
+            <div class="upgrade" onclick="upgrade2(5)"> <div class="compra"> Cereja Super - $60 </div> <div> +5 cerejas por clique </div></div>
+            <div class="upgrade" onclick="upgrade3(20)"> <div class="compra"> Cereja Mega - $120</div> <div> +20 cerejas por clique </div></div>
+            <div class="upgrade" onclick="upgrade4(50)"> <div class="compra"> Cereja Blaster - $300</div> <div> +50 cerejas por clique </div></div>
         </div>
         
     </div>
