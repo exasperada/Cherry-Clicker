@@ -14,7 +14,7 @@ function diminuirTamanho() {
         imagem.style.transform = 'scale(1)';
     }, 100); 
     Pontos = Pontos + up1;                                                 //adiciona os pontos por clique à pontuação atual
-    document.getElementById('contador').innerHTML = "Pontos " + Pontos;    //atualiza com a nova pontuação
+    document.getElementById('contador').innerHTML = "Cerejas: " + Pontos;    //atualiza com a nova pontuação
     finalizarjogo();                                                       //chama a função para verificar se o jogador ganhou o jogo
 } 
 
@@ -25,7 +25,7 @@ function upgrade1(ValorBaseUpgrade){
         Pontos = Pontos - 25;            //subtrai os pontos para compra
         up1 = up1 + ValorBaseUpgrade;    //aumenta os pontos por click de acordo com o valor do upgrade
         //atualiza com os novos valores
-        document.getElementById('contador').innerHTML = "Pontos " + Pontos;
+        document.getElementById('contador').innerHTML = "Cerejas: " + Pontos;
         document.getElementById('cerejasPorClique').innerHTML = "Cerejas por clique: " + up1;
         document.getElementById('upgrades').innerHTML = "Upgrades: " + upgrades;
     }
@@ -36,7 +36,7 @@ function upgrade2(ValorBaseUpgrade2){
         Pontos = Pontos - 60;            //subtrai os pontos para compra
         up1 = up1 + ValorBaseUpgrade2    //aumenta os pontos por click de acordo com o valor do upgrade
         //atualiza com os novos valores
-        document.getElementById('contador').innerHTML = "Pontos " + Pontos;
+        document.getElementById('contador').innerHTML = "Cerejas: " + Pontos;
         document.getElementById('cerejasPorClique').innerHTML = "Cerejas por clique: " + up1;
         document.getElementById('upgrades').innerHTML = "Upgrades: " + upgrades;
     }
@@ -47,7 +47,7 @@ function upgrade3(ValorBaseUpgrade3){
         Pontos = Pontos - 120;            //subtrai os pontos para compra
         up1 = up1 + ValorBaseUpgrade3     //aumenta os pontos por click de acordo com o valor do upgrade
         //atualiza com os novos valores
-        document.getElementById('contador').innerHTML = "Pontos " + Pontos;
+        document.getElementById('contador').innerHTML = "Cerejas: " + Pontos;
         document.getElementById('cerejasPorClique').innerHTML = "Cerejas por clique: " + up1;
         document.getElementById('upgrades').innerHTML = "Upgrades: " + upgrades;
     }
@@ -59,7 +59,7 @@ function upgrade3(ValorBaseUpgrade3){
             Pontos = Pontos - 300;            //subtrai os pontos para compra
             up1 = up1 + ValorBaseUpgrade4     //aumenta os pontos por click de acordo com o valor do upgrade
             //atualiza com os novos valores
-            document.getElementById('contador').innerHTML = "Pontos " + Pontos;
+            document.getElementById('contador').innerHTML = "Cerejas: " + Pontos;
             document.getElementById('cerejasPorClique').innerHTML = "Cerejas por clique: " + up1;
             document.getElementById('upgrades').innerHTML = "Upgrades: " + upgrades;
         }
