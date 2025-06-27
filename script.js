@@ -12,7 +12,7 @@ function diminuirTamanho() {
 
     setTimeout(function() {
         imagem.style.transform = 'scale(1)';
-    }, 100); 
+    }, 100);  
     Pontos = Pontos + up1;                                                 //adiciona os pontos por clique à pontuação atual
     document.getElementById('contador').innerHTML = "Cerejas: " + Pontos;    //atualiza com a nova pontuação
     finalizarjogo();                                                       //chama a função para verificar se o jogador ganhou o jogo
