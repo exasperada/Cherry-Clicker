@@ -10,9 +10,6 @@ function atualizarTela() {
 
 document.getElementById('cherryImage').addEventListener('click', () => {
     cerejas += cerejasPorClique;
-if (cerejas > 500) {
-    cerejas = 500;
-}
     atualizarTela();
 });
 
@@ -26,6 +23,10 @@ function comprarUpgrade(custo, aumento) {
         alert("Você não tem cerejas suficientes!");
     }
 }
+function finalizarjogo(){
+    if(Pontos >= 500){
+        alert("Parabéns você chegou no final!!!")     //alerta de vitória
+        location.reload();                            //reinicia o jogo
+    }
+}
 
-
-atualizarTela();
