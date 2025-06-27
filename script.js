@@ -30,25 +30,6 @@ function upgrade1(ValorBaseUpgrade){
         document.getElementById('upgrades').innerHTML = "Upgrades: " + upgrades;
     }
 }
-<<<<<<< HEAD
-
-document.getElementById('cherryImage').addEventListener('click', () => {
-    cerejas += cerejasPorClique;
-if (cerejas > 500) {
-    cerejas = 500;
-}
-    atualizarTela();
-});
-
-function comprarUpgrade(custo, aumento) {
-    if (cerejas >= custo) {
-        cerejas -= custo;
-        cerejasPorClique += aumento;
-        upgradesComprados++;
-        atualizarTela();
-    } else {
-        alert("Você não tem cerejas suficientes!");
-=======
 function upgrade2(ValorBaseUpgrade2){
     if(Pontos >= 60){                    //só permite comprar se o jogador tiver 60 pontos
         upgrades += 1                    //aumenta em 1 a contagem de upgrades
@@ -69,7 +50,6 @@ function upgrade3(ValorBaseUpgrade3){
         document.getElementById('contador').innerHTML = "Cerejas: " + Pontos;
         document.getElementById('cerejasPorClique').innerHTML = "Cerejas por clique: " + up1;
         document.getElementById('upgrades').innerHTML = "Upgrades: " + upgrades;
->>>>>>> 9cf6f41230a78e5c215a8f7d65bd71e512b2928d
     }
 }
 
