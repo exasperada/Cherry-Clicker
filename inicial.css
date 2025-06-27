@@ -1,38 +1,38 @@
-:root {
+:root { /* Define as variáveis de cor para o tema do site */
   --vermelho: #af0000;
   --verde: #4c876a;
   --rosa: #e3c0bc;
   --rosahover: #e69a9a;
 }
 
-main { 
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-  height: 700px;
+main {  /* Define o layout principal da página */
+  display: flex; /* Ativa o Flexbox para organizar os elementos */
+  gap: 50px; /* Espaçamento entre os elementos */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  height: 700px; /* Define a altura do main */
 }
 
 h1 {
-  font-family: 'Arial', cursive;
-  font-size: 48px;
-  color: var(--vermelho);
+  font-family: 'Arial', cursive; /* Define a fonte do título */
+  font-size: 48px; /* Tamanho da fonte do título */
+  color: var(--vermelho); /* Cor do título */
 }
 
 .cereja {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
+  position: relative; /* Permite posicionar os elementos filhos em relação a este */
+  width: 100px; /* Largura do container da cereja */
+  height: 100px; /* Altura do container da cereja */
+  cursor: pointer; /* Muda o cursor para uma mãozinha quando passa sobre a cereja */
 }
 
-.cereja img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.3s ease;
+.cereja img { /* Estilo para as imagens dentro do container da cereja */
+  position: absolute; /* Permite posicionar as imagens dentro do container */
+  top: 0; /* Posiciona as imagens no topo do container */
+  left: 0; /* Posiciona as imagens à esquerda do container */
+  width: 100%; /* Largura das imagens igual à do container */
+  height: 100%; /* Altura das imagens igual à do container */
+  transition: opacity 0.3s ease; /* Transição suave para a opacidade */
 }
 
 .cereja img.hover {
@@ -47,7 +47,7 @@ h1 {
   opacity: 0; /* Esconde a imagem normal quando passa o mouse */
 }
 
-body {
+body { /* Alinha todos os textos ao centro, troca a fonte, define a cor de fundo e a cor do texto */
     font-family:  'Arial', cursive;
     background-color: var(--rosa);  
     color: var(--vermelho);
