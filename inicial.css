@@ -4,7 +4,7 @@
   --rosa: #e3c0bc;
 }
 
-main {
+main { 
   display: flex;
   gap: 50px;
   align-items: center;
