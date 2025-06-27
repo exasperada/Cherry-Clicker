@@ -10,6 +10,9 @@ function atualizarTela() {
 
 document.getElementById('cherryImage').addEventListener('click', () => {
     cerejas += cerejasPorClique;
+if (cerejas > 500) {
+    cerejas = 500;
+}
     atualizarTela();
 });
 
