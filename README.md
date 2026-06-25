@@ -74,3 +74,4 @@ Aplicar conceitos de desenvolvimento front-end utilizando HTML, CSS e JavaScript
 ## Autora
 
 Gabrielli Eccher
+Manuela Rosin
